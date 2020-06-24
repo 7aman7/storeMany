@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music</title>
+    <style>
+        button{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<center>
+<button onclick="tap(this.id)" data-img="" data-song="">Music 1</button>
+<button onclick="tap2()">Music 2</button>
+<button onclick="tap3()">Music 3</button><br>
+<button onclick="tap4()">Music 4</button>
+<button onclick="tap5()">Music 5</button>
+<button onclick="tap6()">Music 6</button><br>
+<button onclick="tap7()">Music 7</button>
+<button onclick="tap8()">Music 8</button>
+<button onclick="tap9()">Music 9</button>
+<audio src="" id="music"></audio>
+</center>
+</body>
+<script>
+
+    function tap(id) {
+        document.getElementById("music").src = document.getElementById(id).dataset.song
+        document.getElementById("music").play()
+    }
+</script>
+</html>
